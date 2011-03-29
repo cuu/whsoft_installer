@@ -54,9 +54,9 @@ Begin VB.Form Form4
          Width           =   1455
       End
       Begin VB.Label Label5 
-         Caption         =   "代理商编号："
+         Caption         =   "代理商编号:"
          Height          =   375
-         Left            =   120
+         Left            =   240
          TabIndex        =   13
          Top             =   2760
          Width           =   1095
@@ -302,10 +302,3 @@ Private Sub Text1_Change()
 
 End Sub
 
-Private Sub Label11_Click()
-
-End Sub
-
-Private Sub Label5_Click()
-
-End Sub

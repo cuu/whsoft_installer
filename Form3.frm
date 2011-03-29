@@ -201,14 +201,6 @@ End
 
 End Sub
 
-Private Sub Label6_Click()
-
-End Sub
-
-Private Sub Label8_Click()
-
-End Sub
-
   Private Sub text3_KeyPress(KeyAscii As Integer)
           If Not ((Chr(KeyAscii) Like "[0-9]") Or KeyAscii = 8) Then
                   KeyAscii = 0
