@@ -106,9 +106,21 @@ Dim vs As Variant
  If Dir(vs + "\libraries\" + Files(3)) <> "" Then
     'Kill vs + "\libraries\" + Files(3)
  End If
+ 
  If Dir(vs + "\" + Files(4)) <> "" Then
     Kill vs + "\" + Files(4)
  End If
+ 
+ If Dir(vs + "\files\" + Files(5)) <> "" Then
+    'MsgBox Len(vs) & " " & InStrRev(vs, "\", 1)
+    Kill vs + "\files\" + Files(5)
+ End If
+
+ If Dir(vs + "\files\" + Files(6)) <> "" Then
+    'MsgBox Len(vs) & " " & InStrRev(vs, "\", 1)
+    Kill vs + "\files\" + Files(6)
+ End If
+ 
  'Call DeleteRegistryValueOrKey(HKEY_CURRENT_USER, "software\GoldRockfx Software\Info", "Sn")
  'Call DeleteRegistryValueOrKey(HKEY_CURRENT_USER, "software\GoldRockfx Software\Info", "Fn")
  MsgBox "–∂‘ÿ≥…π¶"

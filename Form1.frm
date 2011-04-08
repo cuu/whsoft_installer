@@ -164,6 +164,13 @@ End If
 
 
 End Sub
+Function check_gk4()
+
+    If GetPID("gk4.exe") <> 0 Then
+        'Shellexecute ...
+    End If
+End Function
+
 Private Sub Form_Load()
     Dim n As Integer
     Dim str As String
@@ -177,11 +184,11 @@ Private Sub Form_Load()
         str = str & Mid(Files(4), i, 1)
     Next i
     
-    str = str & " COPYRIGHT 2010 GUOREN"
+    str = str & " COPYRIGHT 2011 GUOREN"
     
     
    Label1.Caption = str
-   
+    Call check_gk4
 End Sub
 Private Sub Form_unLoad(cancel As Integer)
 End

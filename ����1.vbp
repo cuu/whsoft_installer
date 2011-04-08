@@ -11,6 +11,7 @@ Module=Module2; Module2.bas
 Form=Form6.frm
 Class=classIniFile; classIniFile.cls
 Module=Module3; Module3.bas
+Module=Module4; Module4.bas
 IconForm="Form1"
 Startup="Form1"
 HelpFile=""
