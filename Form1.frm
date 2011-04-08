@@ -165,9 +165,17 @@ End If
 
 End Sub
 Function check_gk4()
-
-    If GetPID("gk4.exe") <> 0 Then
-        'Shellexecute ...
+    Dim ret As Long
+    Dim cmd_line As String
+    
+    ret = GetPID("gk4.exe")
+    
+    
+    If ret <> 0 And ret <> -1 Then
+        cmd_line = "/F /pid " + CStr(ret)
+        
+        ShellExecute 0, "open", "taskkill", cmd_line, 0, 0
+        
     End If
 End Function
 
